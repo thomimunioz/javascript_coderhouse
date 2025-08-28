@@ -1,81 +1,92 @@
-const discos_disponibles = [
-    {titulo: 'Dark Side of the Moon', artista: 'Pink Floyd', precio: 200}, 
-    {titulo: 'I Never Loved A Man', artista: 'Aretha Franklin', precio:350}, 
-    {titulo: 'El Amor Después del Amor', artista: 'Fito Paez', precio: 400}, 
-    {titulo: 'To Pimp A Butterfly', artista: 'Kendrick Lamar', precio: 500},
-    {titulo: 'Whats Going On', artista: 'Marvin Gaye', precio: 250}]
+const contenedorTarjetas = document.getElementById('contenedorTarjetas')
 
-const nombre_usuario = prompt(
-    '¡Bienvenido a Vinilos Indigo!\n\n'+
-    'Por favor, ingresá tu nombre para comenzar:\n'
-);
+const carritoCantidad = document.getElementById('carrito-cantidad')
+const panelCarrito = document.getElementById('panel-carrito')
+const itemsCarrito = document.getElementById('items-carrito')
+const totalCarrito = document.getElementById('total-carrito')
+const btnCerrarCarrito = document.getElementById('cerrar-carrito');
+const btnAbrirCarrito = document.getElementById('abrir-carrito')
+const botonesAgregarCarrito = document.querySelectorAll(".btn-comprar-simple")
+let contadorCarrito = 0
 
-let dinero_disponible = prompt(
-    `¡Hola ${nombre_usuario}!
+let discos = []
+let carrito = []
 
-    ¿Cuanto dinero quiere ingresar para comprar?`
-);
-
-let salir = false;
-
-do {
-    const opcion = prompt(
-        `${nombre_usuario}, por favor elegí una opción:
-        1 - Ver saldo disponible
-        2 - Comprar discos
-        3 - Salir`
-    );
-
-    switch(opcion) {
-        case '1':
-            alert(`Tu saldo actual esTho: $${dinero_disponible}`);
-            break;
-
-        case '2':
-            let total = 0;
-            let salirMenuDiscos = false;
-            let discos_comprados = [];
-
-            do {
-                let mensaje = '';
-
-                for (let i = 0; i < discos_disponibles.length; i++) {
-                    mensaje += `${i+1} - ${discos_disponibles[i].titulo} - ${discos_disponibles[i].artista} - Precio: $${discos_disponibles[i].precio}\n`;
-                }
-
-                let disco_elegido = Number(prompt(
-                    'Elegí el número del disco que querés comprar o ingresá 0 para volver al menú principal:\n\n' + 
-                    mensaje + 
-                    '\nTotal gastado: $' + total
-                ));
-
-                if (disco_elegido === 0) {
-                    salirMenuDiscos = true;
-                } else if (disco_elegido >= 1 && disco_elegido <= discos_disponibles.length) {
-                    const precio = discos_disponibles[disco_elegido - 1].precio;
-
-                    if (dinero_disponible >= precio) {
-                        discos_comprados.push(disco_elegido);
-                        total += precio;
-                        dinero_disponible -= precio;
-                        alert(`Compraste: ${discos_disponibles[disco_elegido - 1].titulo}. Te quedan $${dinero_disponible} disponibles para seguir comprando.`);
-                    } else {
-                        alert('No te alcanza el saldo para comprar este disco');
-                    }
-                } else {
-                    alert('Opción inválida, por favor ingresá un número válido.');
-                }
-
-            } while (!salirMenuDiscos);
-
-            break;
-
-        case '3':
-            alert(`¡Adiós ${nombre_usuario}, gracias por tu visita!`);
-            salir = true;
-            break;
-
-        default:
-            alert('Opción inválida. Por favor, elija una opción del menú.');
+async function cargarDatos(){
+    try {
+        const res = await fetch ("./discos.json")
+        discos = await res.json()
+        cargarDiscos()
+    } catch (error) {
+        console.error("No se ha podido cargar la lista de discos.")
     }
-} while (!salir);
+}
+
+function cargarDiscos() {
+    discos.forEach(disco => {
+        const div = document.createElement("div")
+        const article = document.createElement("article")
+        const h2 = document.createElement("h2")
+        const img = document.createElement("img")
+        const h3 = document.createElement("h3")
+        const p = document.createElement("p")
+        const button = document.createElement("button")
+
+        div.className = "col-sm-6 col-md-4 col-lg-3"
+        article.className = "tarjeta-disco"
+        button.className = "btn-comprar-simple"
+        h2.textContent = `${disco.titulo}`
+        img.src = `${disco.img}`
+        h3.textContent = `${disco.artista}`
+        p.textContent = formatearPrecio(`${disco.precio}`)
+        button.textContent = "Agregar al carrito"
+        button.addEventListener('click', actualizarBadgeCarrito)
+
+        contenedorTarjetas.appendChild(div)
+        div.appendChild(article)
+        article.appendChild(h2)
+        article.appendChild(img)
+        article.appendChild(h3)
+        article.appendChild(p)
+        article.appendChild(button)
+    })
+}
+
+function formatearPrecio(precio) {
+    return new Intl.NumberFormat('es-AR', {style:'currency', currency: 'ARS'}).format(precio)
+}
+
+function abrirCarrito() {
+    panelCarrito.classList.add('abierto')
+}
+
+function cerrarCarrito(){
+    panelCarrito.classList.remove('abierto')
+}
+
+btnAbrirCarrito.addEventListener('click', abrirCarrito)
+btnCerrarCarrito.addEventListener('click', cerrarCarrito)
+
+function actualizarBadgeCarrito(){
+    contadorCarrito++
+    carritoCantidad.textContent = contadorCarrito
+    
+    if (contadorCarrito == 0) {
+    carritoCantidad.classList.add('hidden')
+} else {
+    carritoCantidad.classList.remove('hidden')
+}
+}
+
+function agregarAlCarrito(){
+
+}
+
+function renderizarCarrito(){
+
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    cargarDatos()
+})
