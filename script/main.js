@@ -86,8 +86,10 @@ function actualizarBadgeCarrito(){
 function agregarAlCarrito(id){
     let idSeparado = id.split("-")
     id = parseInt(idSeparado[1])
+
     let discoExiste = carrito.find(producto => producto.id === id)
     let discoParaAgregar = discos.find(disco => disco.id === id)
+
     if (discoExiste != undefined){
         discoExiste.cantidad++
     } else {
@@ -95,6 +97,19 @@ function agregarAlCarrito(id){
         carrito.push(discoParaAgregar)
     }
 
+    actualizarContador()
+    renderizarCarrito()
+}
+
+function actualizarContador(){
+    contadorCarrito = carrito.reduce((acc, p) => acc + p.cantidad, 0)
+    carritoCantidad.textContent = contadorCarrito
+    carritoCantidad.classList.toggle('hidden', contadorCarrito === 0)
+}
+
+function eliminarProducto(id){
+    carrito = carrito.filter(producto => producto.id !== id)
+    actualizarContador()
     renderizarCarrito()
 }
 
@@ -118,6 +133,7 @@ function renderizarCarrito(){
 
         const i = document.createElement("i")
         i.className = "bi bi-x-circle-fill eliminar-item"
+        i.addEventListener('click', () => eliminarProducto(producto.id))
         div_1.appendChild(i)
 
         const div_2 = document.createElement("div")
@@ -159,6 +175,7 @@ function renderizarCarrito(){
 
         let total = carrito.reduce((acc, producto) => acc + producto.precio * producto.cantidad, 0)
         totalCarrito.textContent = formatearPrecio(total)
+        
     });
 }
 

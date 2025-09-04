@@ -4,7 +4,7 @@
     "titulo": "Dark Side of The Moon",
     "artista": "Pink Floyd",
     "precio": 20000,
-    "img": "/img/json-img/dark_side_of_the_moon.jpg",
+    "img": "./img/json-img/dark_side_of_the_moon.jpg",
     "cantidad": 0,
     "año": 1973,
     "genero": "Rock"
@@ -14,7 +14,7 @@
     "titulo": "I Never Loved A Man",
     "artista": "Aretha Franklin",
     "precio": 35000,
-    "img": "/img/json-img/i_necer_loved_a_man.jpg",
+    "img": "./img/json-img/i_necer_loved_a_man.jpg",
     "cantidad": 0,
     "año": 1967,
     "genero": "Soul"
@@ -24,7 +24,7 @@
     "titulo": "El Amor Después del Amor",
     "artista": "Fito Páez",
     "precio": 25000,
-    "img": "/img/json-img/el_amor_despues_del_amor.jpg",
+    "img": "./img/json-img/el_amor_despues_del_amor.jpg",
     "cantidad": 0,
     "año": 1992,
     "genero": "Rock"
@@ -34,7 +34,7 @@
     "titulo": "To Pimp A Butterfly",
     "artista": "Kendrick Lamar",
     "precio": 40000,
-    "img": "/img/json-img/to_pimp_a_butterfly.avif",
+    "img": "./img/json-img/to_pimp_a_butterfly.avif",
     "cantidad": 0,
     "año": 2015,
     "genero": "Hip-Hop"
@@ -44,7 +44,7 @@
     "titulo": "What's Going On",
     "artista": "Marvin Gaye",
     "precio": 30000,
-    "img": "/img/json-img/whats_going_on.jpg",
+    "img": "./img/json-img/whats_going_on.jpg",
     "cantidad": 0,
     "año": 1971,
     "genero": "Soul"
@@ -54,7 +54,7 @@
     "titulo": "Abbey Road",
     "artista": "The Beatles",
     "precio": 28000,
-    "img": "/img/json-img/abbey_road.jpg",
+    "img": "./img/json-img/abbey_road.jpg",
     "cantidad": 0,
     "año": 1969,
     "genero": "Rock"
@@ -64,7 +64,7 @@
     "titulo": "Unknown Pleasures",
     "artista": "Joy Division",
     "precio": 40000,
-    "img": "/img/json-img/unknown_pleasures.jpg",
+    "img": "./img/json-img/unknown_pleasures.jpg",
     "cantidad": 0,
     "año": 1979,
     "genero": "Punk"
@@ -74,7 +74,7 @@
     "titulo": "Like a Virgin",
     "artista": "Madonna",
     "precio": 35000,
-    "img": "/img/json-img/like_a_virgin.jpg",
+    "img": "./img/json-img/like_a_virgin.jpg",
     "cantidad": 0,
     "año": 1984,
     "genero": "Pop"
@@ -84,7 +84,7 @@
     "titulo": "Thriller",
     "artista": "Michael Jackson",
     "precio": 42000,
-    "img": "/img/json-img/thriller_michael_jackson.jpg",
+    "img": "./img/json-img/thriller_michael_jackson.jpg",
     "cantidad": 0,
     "año": 1982,
     "genero": "Pop"
@@ -94,7 +94,7 @@
     "titulo": "Back in Black",
     "artista": "AC/DC",
     "precio": 38000,
-    "img": "/img/json-img/back_in_black_acdc.png",
+    "img": "./img/json-img/back_in_black_acdc.png",
     "cantidad": 0,
     "año": 1980,
     "genero": "Rock"
@@ -104,7 +104,7 @@
     "titulo": "OK Computer",
     "artista": "Radiohead",
     "precio": 36000,
-    "img": "/img/json-img/ok_computer_radiohead.png",
+    "img": "./img/json-img/ok_computer_radiohead.png",
     "cantidad": 0,
     "año": 1997,
     "genero": "Rock"
@@ -114,7 +114,7 @@
     "titulo": "Lemonade",
     "artista": "Beyoncé",
     "precio": 40000,
-    "img": "/img/json-img/lemonade_beyonce.jpg",
+    "img": "./img/json-img/lemonade_beyonce.jpg",
     "cantidad": 0,
     "año": 2016,
     "genero": "Soul"
@@ -124,7 +124,7 @@
     "titulo": "Kind of Blue",
     "artista": "Miles Davis",
     "precio": 30000,
-    "img": "/img/json-img/kind_of_blue_miles_davis.webp",
+    "img": "./img/json-img/kind_of_blue_miles_davis.webp",
     "cantidad": 0,
     "año": 1959,
     "genero": "Jazz"
@@ -134,7 +134,7 @@
     "titulo": "Nevermind",
     "artista": "Nirvana",
     "precio": 37000,
-    "img": "/img/json-img/nevermind_nirvana.avif",
+    "img": "./img/json-img/nevermind_nirvana.avif",
     "cantidad": 0,
     "año": 1991,
     "genero": "Grunge"
@@ -144,7 +144,7 @@
     "titulo": "Future Nostalgia",
     "artista": "Dua Lipa",
     "precio": 34000,
-    "img": "/img/json-img/future_nostalgia_dua_lipa.png",
+    "img": "./img/json-img/future_nostalgia_dua_lipa.png",
     "cantidad": 0,
     "año": 2020,
     "genero": "Pop"
@@ -154,7 +154,7 @@
     "titulo": "Blue Train",
     "artista": "John Coltrane",
     "precio": 31000,
-    "img": "/img/json-img/blue_train_coltrane.jpg",
+    "img": "./img/json-img/blue_train_coltrane.jpg",
     "cantidad": 0,
     "año": 1957,
     "genero": "Jazz"
@@ -164,7 +164,7 @@
     "titulo": "Astroworld",
     "artista": "Travis Scott",
     "precio": 39000,
-    "img": "/img/json-img/astroworld_travis_scott.png",
+    "img": "./img/json-img/astroworld_travis_scott.png",
     "cantidad": 0,
     "año": 2018,
     "genero": "Hip-Hop"
@@ -174,7 +174,7 @@
     "titulo": "Rumours",
     "artista": "Fleetwood Mac",
     "precio": 33000,
-    "img": "/img/json-img/rumours_fleetwood_mac.png",
+    "img": "./img/json-img/rumours_fleetwood_mac.png",
     "cantidad": 0,
     "año": 1977,
     "genero": "Rock"
@@ -184,7 +184,7 @@
     "titulo": "Random Access Memories",
     "artista": "Daft Punk",
     "precio": 35000,
-    "img": "/img/json-img/ram_daft_punk.png",
+    "img": "./img/json-img/ram_daft_punk.png",
     "cantidad": 0,
     "año": 2013,
     "genero": "Electronica"
@@ -194,7 +194,7 @@
     "titulo": "Motomami",
     "artista": "Rosalía",
     "precio": 37000,
-    "img": "/img/json-img/motomami_rosalia.jpg",
+    "img": "./img/json-img/motomami_rosalia.jpg",
     "cantidad": 0,
     "año": 2022,
     "genero": "Pop"
@@ -204,7 +204,7 @@
     "titulo": "Born to Run",
     "artista": "Bruce Springsteen",
     "precio": 32000,
-    "img": "/img/json-img/born_to_run_bruce_springsteen.jpg",
+    "img": "./img/json-img/born_to_run_bruce_springsteen.jpg",
     "cantidad": 0,
     "año": 1975,
     "genero": "Rock"
@@ -214,7 +214,7 @@
     "titulo": "The Miseducation of Lauryn Hill",
     "artista": "Lauryn Hill",
     "precio": 38000,
-    "img": "/img/json-img/tmolh_lauryn_hill.png",
+    "img": "./img/json-img/tmolh_lauryn_hill.png",
     "cantidad": 0,
     "año": 1998,
     "genero": "Hip-Hop"
@@ -224,7 +224,7 @@
     "titulo": "Ten",
     "artista": "Pearl Jam",
     "precio": 34000,
-    "img": "/img/json-img/ten_pearl_jam.jpg",
+    "img": "./img/json-img/ten_pearl_jam.jpg",
     "cantidad": 0,
     "año": 1991,
     "genero": "Grunge"
@@ -234,7 +234,7 @@
     "titulo": "21",
     "artista": "Adele",
     "precio": 36000,
-    "img": "/img/json-img/21_adele.png",
+    "img": "./img/json-img/21_adele.png",
     "cantidad": 0,
     "año": 2011,
     "genero": "Soul"
@@ -244,7 +244,7 @@
     "titulo": "The Chronic",
     "artista": "Dr. Dre",
     "precio": 40000,
-    "img": "/img/json-img/the_chronic_dr_dre.jpg",
+    "img": "./img/json-img/the_chronic_dr_dre.jpg",
     "cantidad": 0,
     "año": 1992,
     "genero": "Hip-Hop"
@@ -254,7 +254,7 @@
     "titulo": "Legend",
     "artista": "Bob Marley & The Wailers",
     "precio": 33000,
-    "img": "/img/json-img/legend_bob_marley.webp",
+    "img": "./img/json-img/legend_bob_marley.webp",
     "cantidad": 0,
     "año": 1984,
     "genero": "Reggae"
@@ -264,7 +264,7 @@
     "titulo": "A Night at the Opera",
     "artista": "Queen",
     "precio": 37000,
-    "img": "/img/json-img/a_night_at_the_opera_queen.png",
+    "img": "./img/json-img/a_night_at_the_opera_queen.png",
     "cantidad": 0,
     "año": 1975,
     "genero": "Rock"
@@ -274,7 +274,7 @@
     "titulo": "Homework",
     "artista": "Daft Punk",
     "precio": 32000,
-    "img": "/img/json-img/homework_daft_punk.jpg",
+    "img": "./img/json-img/homework_daft_punk.jpg",
     "cantidad": 0,
     "año": 1997,
     "genero": "Electronica"
@@ -284,7 +284,7 @@
     "titulo": "Is This It",
     "artista": "The Strokes",
     "precio": 31000,
-    "img": "/img/json-img/is_this_it_the_strokes.png",
+    "img": "./img/json-img/is_this_it_the_strokes.png",
     "cantidad": 0,
     "año": 2001,
     "genero": "Rock"
@@ -294,7 +294,7 @@
     "titulo": "Un Verano Sin Ti",
     "artista": "Bad Bunny",
     "precio": 39000,
-    "img": "/img/json-img/un_verano_sin_ti_bad_bunny.jpg",
+    "img": "./img/json-img/un_verano_sin_ti_bad_bunny.jpg",
     "cantidad": 0,
     "año": 2022,
     "genero": "Reggaeton"
@@ -304,7 +304,7 @@
     "titulo": "The Velvet Underground & Nico",
     "artista": "The Velvet Underground",
     "precio": 35000,
-    "img": "/img/json-img/the_velvet_underground_and_nico_the_velvet_underground.jpg",
+    "img": "./img/json-img/the_velvet_underground_and_nico_the_velvet_underground.jpg",
     "cantidad": 0,
     "año": 1967,
     "genero": "Rock"
@@ -314,7 +314,7 @@
     "titulo": "Good Kid, M.A.A.D City",
     "artista": "Kendrick Lamar",
     "precio": 42000,
-    "img": "/img/json-img/good_kid_maad_city_kendrick_lamar.jpg",
+    "img": "./img/json-img/good_kid_maad_city_kendrick_lamar.jpg",
     "cantidad": 0,
     "año": 2012,
     "genero": "Hip-Hop"
@@ -324,7 +324,7 @@
     "titulo": "Hotel California",
     "artista": "Eagles",
     "precio": 34000,
-    "img": "/img/json-img/hotel_california_eagles.png",
+    "img": "./img/json-img/hotel_california_eagles.png",
     "cantidad": 0,
     "año": 1976,
     "genero": "Rock"
@@ -334,7 +334,7 @@
     "titulo": "After Hours",
     "artista": "The Weeknd",
     "precio": 37000,
-    "img": "/img/json-img/after_hours_the_weekend.png",
+    "img": "./img/json-img/after_hours_the_weekend.png",
     "cantidad": 0,
     "año": 2020,
     "genero": "Pop"
@@ -344,7 +344,7 @@
     "titulo": "London Calling",
     "artista": "The Clash",
     "precio": 36000,
-    "img": "/img/json-img/london_calling_the_clash.jpg",
+    "img": "./img/json-img/london_calling_the_clash.jpg",
     "cantidad": 0,
     "año": 1979,
     "genero": "Rock"
@@ -354,7 +354,7 @@
     "titulo": "Hounds of Love",
     "artista": "Kate Bush",
     "precio": 33000,
-    "img": "/img/json-img/hounds_of_love_kate_bush.png",
+    "img": "./img/json-img/hounds_of_love_kate_bush.png",
     "cantidad": 0,
     "año": 1985,
     "genero": "Pop"
@@ -364,7 +364,7 @@
     "titulo": "DAMN.",
     "artista": "Kendrick Lamar",
     "precio": 41000,
-    "img": "/img/json-img/damn_kendrick_lamar.png",
+    "img": "./img/json-img/damn_kendrick_lamar.png",
     "cantidad": 0,
     "año": 2017,
     "genero": "Hip-Hop"
@@ -374,7 +374,7 @@
     "titulo": "Revolver",
     "artista": "The Beatles",
     "precio": 32000,
-    "img": "/img/json-img/revolver_the_beatles.jpg",
+    "img": "./img/json-img/revolver_the_beatles.jpg",
     "cantidad": 0,
     "año": 1966,
     "genero": "Rock"
@@ -384,7 +384,7 @@
     "titulo": "AM",
     "artista": "Arctic Monkeys",
     "precio": 35000,
-    "img": "/img/json-img/am_arctic_monkeys.jpg",
+    "img": "./img/json-img/am_arctic_monkeys.jpg",
     "cantidad": 0,
     "año": 2013,
     "genero": "Rock"
@@ -394,7 +394,7 @@
   "titulo": "All Eyez on Me",
   "artista": "2Pac",
   "precio": 39000,
-  "img": "/img/json-img/all_eyez_on_me_2pac.jpg",
+  "img": "./img/json-img/all_eyez_on_me_2pac.jpg",
   "cantidad": 0,
   "año": 1996,
   "genero": "Hip-Hop"
