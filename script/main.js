@@ -7,6 +7,7 @@ const totalCarrito = document.getElementById('total-carrito')
 const btnCerrarCarrito = document.getElementById('cerrar-carrito');
 const btnAbrirCarrito = document.getElementById('abrir-carrito')
 const botonesAgregarCarrito = document.querySelectorAll(".btn-comprar-simple")
+const contenedorItemsCarrito = document.getElementById('items-carrito')
 let contadorCarrito = 0
 
 let discos = []
@@ -35,12 +36,16 @@ function cargarDiscos() {
         div.className = "col-sm-6 col-md-4 col-lg-3"
         article.className = "tarjeta-disco"
         button.className = "btn-comprar-simple"
+        button.id = `btn-${disco.id}`
         h2.textContent = `${disco.titulo}`
         img.src = `${disco.img}`
         h3.textContent = `${disco.artista}`
         p.textContent = formatearPrecio(`${disco.precio}`)
         button.textContent = "Agregar al carrito"
         button.addEventListener('click', actualizarBadgeCarrito)
+        button.addEventListener('click', () => {
+            agregarAlCarrito(button.id)
+        })
 
         contenedorTarjetas.appendChild(div)
         div.appendChild(article)
@@ -78,12 +83,83 @@ function actualizarBadgeCarrito(){
 }
 }
 
-function agregarAlCarrito(){
+function agregarAlCarrito(id){
+    let idSeparado = id.split("-")
+    id = parseInt(idSeparado[1])
+    let discoExiste = carrito.find(producto => producto.id === id)
+    let discoParaAgregar = discos.find(disco => disco.id === id)
+    if (discoExiste != undefined){
+        discoExiste.cantidad++
+    } else {
+        discoParaAgregar.cantidad = 1
+        carrito.push(discoParaAgregar)
+    }
 
+    renderizarCarrito()
 }
 
 function renderizarCarrito(){
+    contenedorItemsCarrito.innerHTML = ""
 
+    if(carrito.length === 0) {
+        document.getElementById("carrito-vacio").classList.remove("hidden")
+        totalCarrito.textContent = "$0"
+        return
+    } else {
+        document.getElementById("carrito-vacio").classList.add("hidden")
+    }
+
+    carrito.forEach(producto => {
+        const div_1 = document.createElement("div")
+        div_1.className = "carrito-item d-flex align-items-center mb-3 p-2"
+        div_1.style.backgroundColor = "#f5f5f5"
+        div_1.style.borderRadius = "6px"
+        contenedorItemsCarrito.appendChild(div_1)
+
+        const i = document.createElement("i")
+        i.className = "bi bi-x-circle-fill eliminar-item"
+        div_1.appendChild(i)
+
+        const div_2 = document.createElement("div")
+        div_2.className = "carrito-img me-3"
+        div_1.appendChild(div_2)
+
+        const img = document.createElement("img")
+        img.src = producto.img
+        img.style.width = "50px"
+        img.style.height = "50px"
+        img.style.objectFit = "cover"
+        img.style.borderRadius = "4px";
+        div_2.appendChild(img)
+
+        const div_3 = document.createElement("div")
+        div_3.className = "carrito-detalle flex-grow-1"
+        div_1.appendChild(div_3)
+
+        const div_4 = document.createElement("div")
+        div_4.className = "carrito-titulo fw-bold"
+        div_4.textContent = producto.titulo
+        div_3.appendChild(div_4)
+
+        const div_5 = document.createElement("div")
+        div_5.className = "carrito-artista text-muted"
+        div_5.style.fontSize = "0.9rem"
+        div_5.textContent = producto.artista
+        div_3.appendChild(div_5)
+
+        const div_6 = document.createElement("div")
+        div_6.className = "carrito-cantidad px-3"
+        div_6.textContent = "x" + producto.cantidad
+        div_1.appendChild(div_6)
+
+        const div_7 = document.createElement("div")
+        div_7.className = "carrito-precio fw-bold"
+        div_7.textContent = formatearPrecio(producto.precio * producto.cantidad)
+        div_1.appendChild(div_7)
+
+        let total = carrito.reduce((acc, producto) => acc + producto.precio * producto.cantidad, 0)
+        totalCarrito.textContent = formatearPrecio(total)
+    });
 }
 
 

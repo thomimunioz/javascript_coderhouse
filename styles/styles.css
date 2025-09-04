@@ -84,7 +84,7 @@ body {
     box-shadow: -2px 0 10px rgba(0,0,0,0.3);
     padding: 20px;
     transition: right 0.3s ease;
-    z-index: 999;
+    z-index: 2000;
     display: flex;
     flex-direction: column;
 }
@@ -92,6 +92,28 @@ body {
 .panel-carrito.abierto {
     right: 0;
 }
+
+.carrito-item {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 10px 20px;
+    display: flex;            /* ya lo tenías inline, por si se necesita */
+    align-items: center;      /* centra todo verticalmente */
+}
+
+.eliminar-item {
+    font-size: 16px;       /* tamaño de la cruz */
+    color: black;
+    cursor: pointer;
+    margin-right: 8px;     /* separa la cruz de la imagen */
+}
+
+.eliminar-item:hover {
+    color: red;            /* opcional, efecto hover */
+}
+
+
 
 .btn-cerrar {
     position: absolute;

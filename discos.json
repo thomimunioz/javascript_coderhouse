@@ -5,7 +5,7 @@
     "artista": "Pink Floyd",
     "precio": 20000,
     "img": "/img/json-img/dark_side_of_the_moon.jpg",
-    "stock": 15,
+    "cantidad": 0,
     "año": 1973,
     "genero": "Rock"
   },
@@ -15,7 +15,7 @@
     "artista": "Aretha Franklin",
     "precio": 35000,
     "img": "/img/json-img/i_necer_loved_a_man.jpg",
-    "stock": 10,
+    "cantidad": 0,
     "año": 1967,
     "genero": "Soul"
   },
@@ -25,7 +25,7 @@
     "artista": "Fito Páez",
     "precio": 25000,
     "img": "/img/json-img/el_amor_despues_del_amor.jpg",
-    "stock": 12,
+    "cantidad": 0,
     "año": 1992,
     "genero": "Rock"
   },
@@ -35,7 +35,7 @@
     "artista": "Kendrick Lamar",
     "precio": 40000,
     "img": "/img/json-img/to_pimp_a_butterfly.avif",
-    "stock": 8,
+    "cantidad": 0,
     "año": 2015,
     "genero": "Hip-Hop"
   },
@@ -45,7 +45,7 @@
     "artista": "Marvin Gaye",
     "precio": 30000,
     "img": "/img/json-img/whats_going_on.jpg",
-    "stock": 10,
+    "cantidad": 0,
     "año": 1971,
     "genero": "Soul"
   },
@@ -55,7 +55,7 @@
     "artista": "The Beatles",
     "precio": 28000,
     "img": "/img/json-img/abbey_road.jpg",
-    "stock": 20,
+    "cantidad": 0,
     "año": 1969,
     "genero": "Rock"
   },
@@ -65,7 +65,7 @@
     "artista": "Joy Division",
     "precio": 40000,
     "img": "/img/json-img/unknown_pleasures.jpg",
-    "stock": 6,
+    "cantidad": 0,
     "año": 1979,
     "genero": "Punk"
   },
@@ -75,7 +75,7 @@
     "artista": "Madonna",
     "precio": 35000,
     "img": "/img/json-img/like_a_virgin.jpg",
-    "stock": 14,
+    "cantidad": 0,
     "año": 1984,
     "genero": "Pop"
   },
@@ -85,7 +85,7 @@
     "artista": "Michael Jackson",
     "precio": 42000,
     "img": "/img/json-img/thriller_michael_jackson.jpg",
-    "stock": 18,
+    "cantidad": 0,
     "año": 1982,
     "genero": "Pop"
   },
@@ -95,7 +95,7 @@
     "artista": "AC/DC",
     "precio": 38000,
     "img": "/img/json-img/back_in_black_acdc.png",
-    "stock": 16,
+    "cantidad": 0,
     "año": 1980,
     "genero": "Rock"
   },
@@ -105,7 +105,7 @@
     "artista": "Radiohead",
     "precio": 36000,
     "img": "/img/json-img/ok_computer_radiohead.png",
-    "stock": 9,
+    "cantidad": 0,
     "año": 1997,
     "genero": "Rock"
   },
@@ -115,7 +115,7 @@
     "artista": "Beyoncé",
     "precio": 40000,
     "img": "/img/json-img/lemonade_beyonce.jpg",
-    "stock": 11,
+    "cantidad": 0,
     "año": 2016,
     "genero": "Soul"
   },
@@ -125,7 +125,7 @@
     "artista": "Miles Davis",
     "precio": 30000,
     "img": "/img/json-img/kind_of_blue_miles_davis.webp",
-    "stock": 7,
+    "cantidad": 0,
     "año": 1959,
     "genero": "Jazz"
   },
@@ -135,7 +135,7 @@
     "artista": "Nirvana",
     "precio": 37000,
     "img": "/img/json-img/nevermind_nirvana.avif",
-    "stock": 13,
+    "cantidad": 0,
     "año": 1991,
     "genero": "Grunge"
   },
@@ -145,7 +145,7 @@
     "artista": "Dua Lipa",
     "precio": 34000,
     "img": "/img/json-img/future_nostalgia_dua_lipa.png",
-    "stock": 12,
+    "cantidad": 0,
     "año": 2020,
     "genero": "Pop"
   },
@@ -155,7 +155,7 @@
     "artista": "John Coltrane",
     "precio": 31000,
     "img": "/img/json-img/blue_train_coltrane.jpg",
-    "stock": 5,
+    "cantidad": 0,
     "año": 1957,
     "genero": "Jazz"
   },
@@ -165,7 +165,7 @@
     "artista": "Travis Scott",
     "precio": 39000,
     "img": "/img/json-img/astroworld_travis_scott.png",
-    "stock": 10,
+    "cantidad": 0,
     "año": 2018,
     "genero": "Hip-Hop"
   },
@@ -175,7 +175,7 @@
     "artista": "Fleetwood Mac",
     "precio": 33000,
     "img": "/img/json-img/rumours_fleetwood_mac.png",
-    "stock": 15,
+    "cantidad": 0,
     "año": 1977,
     "genero": "Rock"
   },
@@ -185,7 +185,7 @@
     "artista": "Daft Punk",
     "precio": 35000,
     "img": "/img/json-img/ram_daft_punk.png",
-    "stock": 9,
+    "cantidad": 0,
     "año": 2013,
     "genero": "Electronica"
   },
@@ -195,7 +195,7 @@
     "artista": "Rosalía",
     "precio": 37000,
     "img": "/img/json-img/motomami_rosalia.jpg",
-    "stock": 8,
+    "cantidad": 0,
     "año": 2022,
     "genero": "Pop"
   },
@@ -205,7 +205,7 @@
     "artista": "Bruce Springsteen",
     "precio": 32000,
     "img": "/img/json-img/born_to_run_bruce_springsteen.jpg",
-    "stock": 12,
+    "cantidad": 0,
     "año": 1975,
     "genero": "Rock"
   },
@@ -215,7 +215,7 @@
     "artista": "Lauryn Hill",
     "precio": 38000,
     "img": "/img/json-img/tmolh_lauryn_hill.png",
-    "stock": 7,
+    "cantidad": 0,
     "año": 1998,
     "genero": "Hip-Hop"
   },
@@ -225,7 +225,7 @@
     "artista": "Pearl Jam",
     "precio": 34000,
     "img": "/img/json-img/ten_pearl_jam.jpg",
-    "stock": 10,
+    "cantidad": 0,
     "año": 1991,
     "genero": "Grunge"
   },
@@ -235,7 +235,7 @@
     "artista": "Adele",
     "precio": 36000,
     "img": "/img/json-img/21_adele.png",
-    "stock": 14,
+    "cantidad": 0,
     "año": 2011,
     "genero": "Soul"
   },
@@ -245,7 +245,7 @@
     "artista": "Dr. Dre",
     "precio": 40000,
     "img": "/img/json-img/the_chronic_dr_dre.jpg",
-    "stock": 9,
+    "cantidad": 0,
     "año": 1992,
     "genero": "Hip-Hop"
   },
@@ -255,7 +255,7 @@
     "artista": "Bob Marley & The Wailers",
     "precio": 33000,
     "img": "/img/json-img/legend_bob_marley.webp",
-    "stock": 11,
+    "cantidad": 0,
     "año": 1984,
     "genero": "Reggae"
   },
@@ -265,7 +265,7 @@
     "artista": "Queen",
     "precio": 37000,
     "img": "/img/json-img/a_night_at_the_opera_queen.png",
-    "stock": 13,
+    "cantidad": 0,
     "año": 1975,
     "genero": "Rock"
   },
@@ -275,7 +275,7 @@
     "artista": "Daft Punk",
     "precio": 32000,
     "img": "/img/json-img/homework_daft_punk.jpg",
-    "stock": 6,
+    "cantidad": 0,
     "año": 1997,
     "genero": "Electronica"
   },
@@ -285,7 +285,7 @@
     "artista": "The Strokes",
     "precio": 31000,
     "img": "/img/json-img/is_this_it_the_strokes.png",
-    "stock": 12,
+    "cantidad": 0,
     "año": 2001,
     "genero": "Rock"
   },
@@ -295,7 +295,7 @@
     "artista": "Bad Bunny",
     "precio": 39000,
     "img": "/img/json-img/un_verano_sin_ti_bad_bunny.jpg",
-    "stock": 10,
+    "cantidad": 0,
     "año": 2022,
     "genero": "Reggaeton"
   },
@@ -305,7 +305,7 @@
     "artista": "The Velvet Underground",
     "precio": 35000,
     "img": "/img/json-img/the_velvet_underground_and_nico_the_velvet_underground.jpg",
-    "stock": 7,
+    "cantidad": 0,
     "año": 1967,
     "genero": "Rock"
   },
@@ -315,7 +315,7 @@
     "artista": "Kendrick Lamar",
     "precio": 42000,
     "img": "/img/json-img/good_kid_maad_city_kendrick_lamar.jpg",
-    "stock": 9,
+    "cantidad": 0,
     "año": 2012,
     "genero": "Hip-Hop"
   },
@@ -325,7 +325,7 @@
     "artista": "Eagles",
     "precio": 34000,
     "img": "/img/json-img/hotel_california_eagles.png",
-    "stock": 15,
+    "cantidad": 0,
     "año": 1976,
     "genero": "Rock"
   },
@@ -335,7 +335,7 @@
     "artista": "The Weeknd",
     "precio": 37000,
     "img": "/img/json-img/after_hours_the_weekend.png",
-    "stock": 12,
+    "cantidad": 0,
     "año": 2020,
     "genero": "Pop"
   },
@@ -345,7 +345,7 @@
     "artista": "The Clash",
     "precio": 36000,
     "img": "/img/json-img/london_calling_the_clash.jpg",
-    "stock": 8,
+    "cantidad": 0,
     "año": 1979,
     "genero": "Rock"
   },
@@ -355,7 +355,7 @@
     "artista": "Kate Bush",
     "precio": 33000,
     "img": "/img/json-img/hounds_of_love_kate_bush.png",
-    "stock": 6,
+    "cantidad": 0,
     "año": 1985,
     "genero": "Pop"
   },
@@ -365,7 +365,7 @@
     "artista": "Kendrick Lamar",
     "precio": 41000,
     "img": "/img/json-img/damn_kendrick_lamar.png",
-    "stock": 11,
+    "cantidad": 0,
     "año": 2017,
     "genero": "Hip-Hop"
   },
@@ -375,7 +375,7 @@
     "artista": "The Beatles",
     "precio": 32000,
     "img": "/img/json-img/revolver_the_beatles.jpg",
-    "stock": 14,
+    "cantidad": 0,
     "año": 1966,
     "genero": "Rock"
   },
@@ -385,7 +385,7 @@
     "artista": "Arctic Monkeys",
     "precio": 35000,
     "img": "/img/json-img/am_arctic_monkeys.jpg",
-    "stock": 10,
+    "cantidad": 0,
     "año": 2013,
     "genero": "Rock"
   },
@@ -395,7 +395,7 @@
   "artista": "2Pac",
   "precio": 39000,
   "img": "/img/json-img/all_eyez_on_me_2pac.jpg",
-  "stock": 9,
+  "cantidad": 0,
   "año": 1996,
   "genero": "Hip-Hop"
   }
