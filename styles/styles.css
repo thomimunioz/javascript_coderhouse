@@ -77,8 +77,8 @@ body {
 .panel-carrito {
     position: fixed;
     top: 0;
-    right: -400px;
-    width: 350px;
+    right: -450px;
+    width: 450px;
     height: 100%;
     background-color: #fff;
     box-shadow: -2px 0 10px rgba(0,0,0,0.3);
@@ -94,23 +94,47 @@ body {
 }
 
 .carrito-item {
-    width: calc(100% + 40px);
-    margin-left: -20px;
-    margin-right: -20px;
-    padding: 10px 20px;
-    display: flex;            /* ya lo tenías inline, por si se necesita */
-    align-items: center;      /* centra todo verticalmente */
+    width: 100%;
+    padding: 10px 10px; 
+    display: flex;
+    align-items: center;
+    overflow-y: auto;
 }
 
+.items-carrito {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 5px; 
+}
+
+.items-carrito::-webkit-scrollbar {
+    width: 6px;
+}
+
+.items-carrito::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 3px;
+}
+
+
 .eliminar-item {
-    font-size: 16px;       /* tamaño de la cruz */
+    font-size: 16px;
     color: black;
     cursor: pointer;
-    margin-right: 8px;     /* separa la cruz de la imagen */
+    margin-right: 8px;
 }
 
 .eliminar-item:hover {
-    color: red;            /* opcional, efecto hover */
+    color: red;
+}
+
+.btn-finalizar.disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+    pointer-events: none; 
 }
 
 
@@ -130,9 +154,29 @@ body {
 }
 
 .logo {
-  height: 80px;
-  width: auto;
+    height: 80px;
+    width: auto;
 }
+
+.acciones-carrito {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.btn-finalizar {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-finalizar:hover {
+    background-color: #218838;
+}
+
 
 .hero-title{
     font-family: "Righteous", sans-serif;

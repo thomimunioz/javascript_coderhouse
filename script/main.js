@@ -119,6 +119,7 @@ function renderizarCarrito(){
     if(carrito.length === 0) {
         document.getElementById("carrito-vacio").classList.remove("hidden")
         totalCarrito.textContent = "$0"
+        actualizarBotonFinalizar();
         return
     } else {
         document.getElementById("carrito-vacio").classList.add("hidden")
@@ -177,9 +178,51 @@ function renderizarCarrito(){
         totalCarrito.textContent = formatearPrecio(total)
         
     });
+
+        actualizarBotonFinalizar();
+}
+
+function actualizarBotonFinalizar() {
+    const btnFinalizar = document.getElementById("finalizar-compra");
+    if (carrito.length === 0) {
+        btnFinalizar.disabled = true;
+        btnFinalizar.classList.add('disabled');
+    } else {
+        btnFinalizar.disabled = false;
+        btnFinalizar.classList.remove('disabled');
+    }
 }
 
 
+function mostrarCompraExitosaRedirigiendo(segundos = 5, url = "index.html") {
+Swal.fire({
+    title: "¡Compra realizada!",
+    html: `Gracias por tu compra 😃 <br><br>
+        Redirigiéndote a home en <b>${segundos}</b> segundos...`,
+    icon: "success",
+    showConfirmButton: false,
+    allowOutsideClick: false,
+    timerProgressBar: true,
+    didOpen: () => {
+    const content = Swal.getHtmlContainer().querySelector("b");
+
+    const timerInterval = setInterval(() => {
+        segundos--;
+        content.textContent = segundos;
+        if (segundos <= 0) {
+        clearInterval(timerInterval);
+        window.location.href = url;
+        }
+    }, 1000);
+    }
+});
+}
+
+document.getElementById("finalizar-compra").addEventListener("click", () => {
+    mostrarCompraExitosaRedirigiendo();
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     cargarDatos()
+    actualizarBotonFinalizar();
 })

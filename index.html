@@ -25,17 +25,9 @@
         <span class="navbar-toggler-icon"></span>
     </button>
 
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <form action="" class="d-flex me-3" role="search" style="max-width: 300px;">
-          <input type="search" class="form-control me-2 search-input" placeholder="Buscar..." aria-label="Buscar" />
-          <button class="btn btn-outline-warning" type="submit">
-              <i class="bi bi-search"></i>
-          </button>
-          </form>
 
           <ul class="navbar-nav">
             <li class="nav-item"><a class="nav-link custom-link" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link custom-link" href="./pages/catalogo.html">Catalogo</a></li>
             <li class="nav-item position-relative">
             <a class="nav-link custom-link" href="#" id="abrir-carrito">
               <span class="material-symbols-outlined">shopping_cart</span>
@@ -57,9 +49,12 @@
     <div class="total-carrito">
         Total: <span id="total-carrito">$0</span>
     </div>
+
+
+    <div class="acciones-carrito">
+        <button id="finalizar-compra" class="btn-finalizar">Finalizar compra</button>
+    </div>
 </div>
-
-
 
 
 <main>
@@ -158,5 +153,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/96e2ff5d4b.js" crossorigin="anonymous"></script>
 <script src="./script/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
